@@ -1,0 +1,41 @@
+{
+  "name": "sample-koa-app",
+  "version": "1.0.0",
+  "description": "Sample Koa Application",
+  "main": "index.js",
+  "author": "boomauakim",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node ./index.js",
+    "start": "nodemon node ./index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "jest": "^23.1.0",
+    "jest-junit": "^5.0.0",
+    "nodemon": "^1.17.5",
+    "prettier": "^1.13.5",
+    "supertest": "^3.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "libs/**",
+      "routes/**",
+      "models/**"
+    ]
+  }
+}
